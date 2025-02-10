@@ -25,3 +25,15 @@ console.log(userAge)
 
 const price = userKm * 0.21
 console.log(price)
+
+if (userAge < 18) {
+    let minorDsicount = price * 20 / 100
+    console.log(minorDsicount);
+}
+else if (userAge > 65) {
+    let overDiscount = price * 40 / 100
+    console.log(overDiscount);
+}
+else {
+    console.log(price);
+}
