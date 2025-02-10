@@ -16,6 +16,15 @@ PREPARAZIONE
 - if/else if/ else for discounts
 - output with innerHTML
 */
+const firstName = prompt("First Name")
+console.log(firstName);
+
+const lastName = prompt("Last Name")
+console.log(lastName);
+
+const fullName = firstName + " " + lastName
+console.log(fullName);
+
 
 const userKm = Number(prompt("Insert Km that u want to travel[numeric value: '1200']"))
 console.log(userKm);
@@ -40,6 +49,7 @@ else {
 
 }
 
+document.getElementById("fullName").innerHTML = fullName
 document.getElementById("Age").innerHTML = userAge
 document.getElementById("Km").innerHTML = userKm
 
