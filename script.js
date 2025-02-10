@@ -22,3 +22,6 @@ console.log(userKm);
 
 const userAge = Number(prompt("Insert age of the traveler"))
 console.log(userAge)
+
+const price = userKm * 0.21
+console.log(price)
