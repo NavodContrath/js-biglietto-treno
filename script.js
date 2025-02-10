@@ -37,15 +37,18 @@ console.log(price)
 
 if (userAge < 18) {
     let minorDiscount = price * 20 / 100
-    document.getElementById("price").innerHTML = minorDiscount
+    let minor_discount = minorDiscount.toFixed(2)
+    document.getElementById("price").innerHTML = minor_discount
 }
 else if (userAge > 65) {
     let overDiscount = price * 40 / 100
-    document.getElementById("price").innerHTML = overDiscount
+    let over_discount = overDiscount.toFixed(2)
+    document.getElementById("price").innerHTML = over_discount
 
 }
 else {
-    document.getElementById("price").innerHTML = price
+    let Price = price.toFixed(2)
+    document.getElementById("price").innerHTML = Price
 
 }
 
